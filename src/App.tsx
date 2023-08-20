@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Contact from './contactPage/contact';
+import EditContact from './contactPage/editContact';
+import AddContact from './contactPage/addContact';
+import Sidebar from './Home/sidebar';
+import Map from './chartsAndMapsPage/maps';
+import LineChart from './chartsAndMapsPage/charts';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <div className='flex justify-start items-center flex-nowrap flex-row bg-gray-900'>
+          <Sidebar />
+          <p className='text-white m-auto font-bold p-5'>Contact Management App</p>
+        </div>
+        <Routes>
+          <Route path="/" Component={Contact} />
+          <Route path="/contact" Component={Contact} />
+          <Route path="/createContact" element={<AddContact />} />
+          <Route path="/editContact/:contactId/:contactInfo" element={<EditContact />} />
+          <Route path="/map" element={<Map/>} />
+          <Route path="/chart" element={<LineChart/>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
