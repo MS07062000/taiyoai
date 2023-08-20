@@ -18,7 +18,7 @@ const Sidebar = () => {
                     <h1 className="font-bold text-gray-200 text-[15px] ml-3" onClick={toggleSidebar}>X</h1>
                     <div className="my-2 bg-gray-600 h-[1px]"></div>
                 </div>
-                <Link to="/contact" >
+                <Link to="/" >
                     <div className={`p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white ${activeSection === 'contacts' ? 'bg-blue-600' : ''}`} onClick={() => handleSectionClick('contacts')}>
                         <span className="text-[15px] ml-4 text-gray-200 font-bold">Contacts</span>
                     </div>

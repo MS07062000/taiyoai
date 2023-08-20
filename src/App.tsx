@@ -17,8 +17,7 @@ function App() {
           <p className='text-white m-auto font-bold p-5'>Contact Management App</p>
         </div>
         <Routes>
-          <Route path="/" Component={Contact} />
-          <Route path="/contact" Component={Contact} />
+          <Route path="/" element={<Contact/>} />
           <Route path="/createContact" element={<AddContact />} />
           <Route path="/editContact/:contactId/:contactInfo" element={<EditContact />} />
           <Route path="/map" element={<Map/>} />
