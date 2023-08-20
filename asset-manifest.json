@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/taiyoai/static/css/main.67ed8feb.css",
+    "main.js": "/taiyoai/static/js/main.6043ea8b.js",
+    "static/js/787.cf6a4479.chunk.js": "/taiyoai/static/js/787.cf6a4479.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/taiyoai/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/taiyoai/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "index.html": "/taiyoai/index.html",
+    "main.67ed8feb.css.map": "/taiyoai/static/css/main.67ed8feb.css.map",
+    "main.6043ea8b.js.map": "/taiyoai/static/js/main.6043ea8b.js.map",
+    "787.cf6a4479.chunk.js.map": "/taiyoai/static/js/787.cf6a4479.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67ed8feb.css",
+    "static/js/main.6043ea8b.js"
+  ]
+}
